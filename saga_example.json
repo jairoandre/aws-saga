@@ -1,0 +1,15 @@
+{
+  "saga_id": "VOLUNTARY_CANCEL",
+  "steps": [
+    {
+      "order": 0,
+      "command_queue": "gbm-command-accounts_queue",
+      "rollback_queue": "gbm-rollback-accounts_queue"
+    },
+    {
+      "order": 1,
+      "command_queue": "gbm-command-auth_queue",
+      "rollback_queue": "gbm-rollback-auth_queue"
+    }
+  ]
+}
